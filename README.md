@@ -1,2 +1,7 @@
 # coding-katas
-In this repo you will find different coding katas
+
+This repo will cover different coding katas.
+
+# References
+
+- https://codingdojo.org/kata/
