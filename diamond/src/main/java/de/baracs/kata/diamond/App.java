@@ -4,10 +4,31 @@
 package de.baracs.kata.diamond;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        char test = 'C';
+        int start = 65;
+        int end = test;
+        int difference = 1;
+
+        int spaces = end - start;
+
+        for (int i = start; i <= end; i++) {
+            for (int j = 0; j < spaces; j++) {
+                System.out.print(" ");
+            }
+            System.out.print((char) i);
+            spaces--;
+            if (i != start) {
+                for (int j = 0; j < difference; j++) {
+                    System.out.print(" ");
+                }
+                System.out.print((char)i);
+                difference++;
+            }
+            System.out.print("\n");
+        }
+
+
     }
 }
